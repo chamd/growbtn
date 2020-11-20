@@ -1,0 +1,108 @@
+#upgrade {
+    margin-left: 200px;
+    width: 400px;
+    height: 100px;
+    background-color: rgb(89, 255, 111);
+    border: 5px solid rgb(0, 185, 31);
+}
+
+#upgradeName {
+    font-size: 20px;
+    color: white;
+    text-shadow: 1.5px -1.5px black, 1.5px 1.5px black, -1.5px 1.5px black, -1.5px -1.5px black;
+}
+
+#mouseIMG {
+    position: absolute;
+    margin-left: 400px;
+    width: 100px;
+    height: 100px;
+}
+
+#nowMouse {
+    position: absolute;
+    margin-left: 580px;
+    margin-top: 60px;
+    width: 100px;
+    height: 100px;
+}
+
+#nextIMG {
+    position: absolute;
+    margin-left: 640px;
+    margin-top: 70px;
+    width: 50px;
+    height: 50px;
+}
+
+#nextMouse {
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 60px;
+    width: 100px;
+    height: 100px;
+}
+
+#nextCostIMG {
+    position: absolute;
+    margin-left: 580px;
+    margin-top: 160px;
+    width: 70px;
+}
+
+#nextCost {
+    position: absolute;
+    margin-left: 580px;
+    margin-top: 230px;
+    font-size: 40px;
+}
+
+#upgradePer {
+    position: absolute;
+    margin-left: 645px;
+    margin-top: 100px;
+}
+
+#spec {
+    margin-left: 40px;
+    margin-top: 20px;
+    position: absolute;
+    background-color: rgb(255, 211, 144);
+    border: 5px dashed rgb(189, 113, 0);
+    width: 700px;
+    height: 340px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1.5px -1.5px black, 1.5px 1.5px black, -1.5px 1.5px black, -1.5px -1.5px black;
+}
+
+#specTitle {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 255, 191);
+}
+
+#specName {
+    text-align: center;
+    color: rgb(64, 255, 80);
+}
+
+#specBreak {
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+
+#specAdd {
+    color: rgb(251, 255, 0);
+}
+
+#anvil {
+    margin-top: 10px;
+    width: 520px;
+    height: 320px;
+}
+
+#slideTitle {
+    transition: 0.5s;
+}
+

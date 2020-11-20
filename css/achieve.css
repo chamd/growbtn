@@ -1,0 +1,23 @@
+.achievelist1 {
+    margin-top: 60px;
+    margin-left: 10px;
+    position: absolute;
+    border-right: 5px solid black;
+}
+
+.achievelist2 {
+    margin-top: 60px;
+    margin-left: 400px;
+    position: absolute;
+}
+
+.achieveIMG {
+    width: 80px;
+    margin-left: 0px;
+}
+
+.achievetext {
+    font-size: 20px;
+    color: white;
+    text-shadow: 1.5px -1.5px black, 1.5px 1.5px black, -1.5px 1.5px black, -1.5px -1.5px black;
+}
