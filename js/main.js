@@ -24,7 +24,7 @@ function comma(num) {
 function clickbtn() {
     a4 += 1;
     if (btn === 0) {
-        clicks += 100000000000000;
+        clicks += 1;
         plusClick(0);
     } else if (btn === 1) {
         clicks += 2;
