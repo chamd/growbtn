@@ -128,6 +128,7 @@ function load() {
         if (egg === 1) {
             document.getElementById("egg").style.color = "red";
         }
+        document.getElementById("clickbtn").style.cursor = `url('./img/mouse/mouse${mouse}.png'), auto`;
         if (mouse == 1) {
             document.getElementById("specName").textContent = "거대 마우스";
             document.getElementById("specBreak").textContent = "부서질 확률 : 0.01%";
