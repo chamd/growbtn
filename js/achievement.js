@@ -23,7 +23,7 @@ function achieve(num) {
         }
     }
     if (num == 4) { //main.js 53
-        if (a4 == 100000000) {
+        if (a4 >= 100000000) {
             if (a4F == 0) {
                 alert("\"장인\" 도전과제를 달성했습니다!");
                 document.getElementById("achieve4").src = "./img/achievelist/a4.png";

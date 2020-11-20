@@ -25,6 +25,8 @@ function save() {
         localStorage.setItem('a8F', JSON.stringify(a8F));
         localStorage.setItem('a9F', JSON.stringify(a9F));
         localStorage.setItem('a10F', JSON.stringify(a10F));
+        localStorage.setItem('a4', JSON.stringify(a4));
+        localStorage.setItem('a5', JSON.stringify(a5));
         calert("데이터가 저장되었습니다");
     } else { }
 }
@@ -61,6 +63,8 @@ function load() {
         a8F = JSON.parse(localStorage.getItem('a8F'));
         a9F = JSON.parse(localStorage.getItem('a9F'));
         a10F = JSON.parse(localStorage.getItem('a10F'));
+        a4 = JSON.parse(localStorage.getItem('a4'));
+        a5 = JSON.parse(localStorage.getItem('a5'));
         document.getElementById("click").textContent = '클릭 ' + comma(clicks);
 
         if (btn === 0) {
@@ -124,6 +128,55 @@ function load() {
         if (egg === 1) {
             document.getElementById("egg").style.color = "red";
         }
+        if (mouse == 1) {
+            document.getElementById("specName").textContent = "거대 마우스";
+            document.getElementById("specBreak").textContent = "부서질 확률 : 0.01%";
+            document.getElementById("nextCost").textContent = "7명 필요";
+            document.getElementById("upgradePer").textContent = "80%";
+            document.getElementById("specAddEle").innerHTML = "그냥 &nbsp;&nbsp;&nbsp;버튼 + 1클릭<br>황금 &nbsp;&nbsp;&nbsp;버튼 + 1클릭<br>다이아 버튼 + 1클릭<br>루비 &nbsp;&nbsp;&nbsp;버튼 + 1클릭<br>레전드 버튼 + 10클릭<br>황제의 버튼 + 100클릭<br>어둠의 버튼 + 5,000클릭";
+            document.getElementById("mouseIMG").src = "img/mouse/mouse1.png"
+            document.getElementById("nowMouse").src = "img/mouse/mouse1.png"
+            document.getElementById("nextMouse").src = "img/mouse/mouse2.png"
+        }
+        if (mouse == 2) {
+            document.getElementById("specName").textContent = "날카로운 마우스";
+            document.getElementById("nextCost").textContent = "20명 필요";
+            document.getElementById("upgradePer").textContent = "60%";
+            document.getElementById("specAddEle").innerHTML = "그냥 &nbsp;&nbsp;&nbsp;버튼 + 1클릭<br>황금 &nbsp;&nbsp;&nbsp;버튼 + 1클릭<br>다이아 버튼 + 1클릭<br>루비 &nbsp;&nbsp;&nbsp;버튼 + 10클릭<br>레전드 버튼 + 100클릭<br>황제의 버튼 + 1,000클릭<br>어둠의 버튼 + 50,000클릭";
+            document.getElementById("mouseIMG").src = "img/mouse/mouse2.png"
+            document.getElementById("nowMouse").src = "img/mouse/mouse2.png"
+            document.getElementById("nextMouse").src = "img/mouse/mouse3.png"
+        }
+        if (mouse == 3) {
+            document.getElementById("specName").textContent = "검 마우스";
+            document.getElementById("nextCost").textContent = "100명 필요";
+            document.getElementById("upgradePer").textContent = "40%";
+            document.getElementById("specAddEle").innerHTML = "그냥 &nbsp;&nbsp;&nbsp;버튼 + 1클릭<br>황금 &nbsp;&nbsp;&nbsp;버튼 + 2클릭<br>다이아 버튼 + 10클릭<br>루비 &nbsp;&nbsp;&nbsp;버튼 + 50클릭<br>레전드 버튼 + 1,000클릭<br>황제의 버튼 + 10,000클릭<br>어둠의 버튼 + 500,000클릭";
+            document.getElementById("mouseIMG").src = "img/mouse/mouse3.png"
+            document.getElementById("nowMouse").src = "img/mouse/mouse3.png"
+            document.getElementById("nextMouse").src = "img/mouse/mouse4.png"
+        }
+        if (mouse == 4) {
+            document.getElementById("specName").textContent = "빠큐 마우스";
+            document.getElementById("nextCost").textContent = "500명 필요";
+            document.getElementById("upgradePer").textContent = "20%";
+            document.getElementById("specAddEle").innerHTML = "그냥 &nbsp;&nbsp;&nbsp;버튼 + 2클릭<br>황금 &nbsp;&nbsp;&nbsp;버튼 + 5클릭<br>다이아 버튼 + 20클릭<br>루비 &nbsp;&nbsp;&nbsp;버튼 + 100클릭<br>레전드 버튼 + 20,000클릭<br>황제의 버튼 + 100,000클릭<br>어둠의 버튼 + 5,000,000클릭";
+            document.getElementById("mouseIMG").src = "img/mouse/mouse4.png"
+            document.getElementById("nowMouse").src = "img/mouse/mouse4.png"
+            document.getElementById("nextMouse").src = "img/mouse/mouse5.png"
+            mouse += 1;
+        }
+        if (mouse == 5) {
+            document.getElementById("specName").textContent = "각성 마우스";
+            document.getElementById("nextCost").textContent = "";
+            document.getElementById("upgradePer").textContent = "";
+            document.getElementById("specAddEle").innerHTML = "그냥 &nbsp;&nbsp;&nbsp;버튼 + 4클릭<br>황금 &nbsp;&nbsp;&nbsp;버튼 + 10클릭<br>다이아 버튼 + 40클릭<br>루비 &nbsp;&nbsp;&nbsp;버튼 + 200클릭<br>레전드 버튼 + 40,000클릭<br>황제의 버튼 + 200,000클릭<br>어둠의 버튼 + 10,000,000클릭";
+            document.getElementById("mouseIMG").src = "img/mouse/mouse5.png"
+            document.getElementById("nowMouse").src = "img/mouse/mouse5.png"
+            document.getElementById("nextMouse").src = "img/mouse/mouse5.png"
+        }
+
+
         if (a1F == 1) {
             document.getElementById("achieve1").src = "./img/achievelist/a1.png";
         } else {
