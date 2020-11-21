@@ -14,7 +14,7 @@ function upgrade() {
         workcount -= 3 * 130;
         document.getElementById("worker3c").textContent = comma(work3count / 130) + `명 ` + comma(work3count) + `c/s`;
 
-        if (0 <= upgrade && upgrade <= 99) {
+        if (0 <= upgrade && upgrade <= 98) {
             document.getElementById("specName").textContent = "거대 마우스";
             document.getElementById("specBreak").textContent = "부서질 확률 : 0.01%";
             document.getElementById("nextCost").textContent = "7명 필요";
