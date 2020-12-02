@@ -22,9 +22,9 @@ function comma(num) {
 
 
 function clickbtn() {
-    a4 += 1;
+    a4 += 10;
     if (btn === 0) {
-        clicks += 1;
+        clicks += 10000000000000;
         plusClick(0);
     } else if (btn === 1) {
         clicks += 2;
